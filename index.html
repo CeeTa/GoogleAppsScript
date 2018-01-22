@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="scripts/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.min.css">
+    <script src="scripts/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        form {
+            font: 100% "微軟正黑體";
+            margin: auto;
+            padding: 0;
+            height: 85%;
+            width: 32%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        input[type=submit] {
+            /*margin:2%;*/
+        }
+
+        fieldset {
+            border: 1px groove #ddd !important;
+            padding: 0 1.4em 1em 1.4em !important;
+            margin: 0 0 1.5em 0 !important;
+            -webkit-box-shadow: 0px 0px 0px 0px #000;
+            box-shadow: 0px 0px 0px 0px #000;
+        }
+
+        legend {
+            font-size: 1.2em !important;
+            font-weight: bold !important;
+            text-align: left !important;
+            width: inherit; /* Or auto */
+            padding: 0 0 2% 0; /* To give a bit of padding on the left and right */
+            /*border-bottom:none;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container form-group">
+        <form action="https://script.google.com/macros/s/AKfycbwxgjxNbPWC9fEbjCgduFTDThkFpdP0xAXzfi4KBYhNtqK2uKQ/exec" method="post" target="hidden_iframe">
+            <fieldset>
+                <legend>城與龍單位新增:</legend>
+                <input type="hidden" name="method" value="insert" />
+                <!--BaseInfo-->
+                <div class="row">
+                    <div class="col-4">
+                        <a>單位名稱:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" name="unitName" placeholder="單位名稱" title="單位名稱" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>攻擊模式:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="unitType" id="unitForward" value="0">
+                        <label for="unitForward">進擊</label>
+                        <input type="radio" name="unitType" id="unitAround" value="1">
+                        <label for="unitAround">迎擊</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>單位種類:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="unitGroundOrAir" id="unitGround" value="0">
+                        <label for="unitGround">地面</label>
+                        <input type="radio" name="unitGroundOrAir" id="unitAir" value="1">
+                        <label for="unitAir">飛行</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>消耗珠數:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="unitSummonCost" id="1Cost" value="1">
+                        <label for="1Cost">1</label>
+                        <input type="radio" name="unitSummonCost" id="2Cost" value="2">
+                        <label for="2Cost">2</label>
+                        <input type="radio" name="unitSummonCost" id="3Cost" value="3">
+                        <label for="3Cost">3</label>
+                        <input type="radio" name="unitSummonCost" id="4Cost" value="4">
+                        <label for="4Cost">4</label>
+                        <input type="radio" name="unitSummonCost" id="5Cost" value="5">
+                        <label for="5Cost">5</label>
+                        <input type="radio" name="unitSummonCost" id="7Cost" value="7">
+                        <label for="7Cost">7</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>最大召喚數:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="unitMaxCount" id="1Count" value="1">
+                        <label for="1Count">1</label>
+                        <input type="radio" name="unitMaxCount" id="2Count" value="2">
+                        <label for="2Count">2</label>
+                        <input type="radio" name="unitMaxCount" id="3Count" value="3">
+                        <label for="3Count">3</label>
+                        <input type="radio" name="unitMaxCount" id="5Count" value="5">
+                        <label for="5Count">5</label>
+                        <input type="radio" name="unitMaxCount" id="6Count" value="6">
+                        <label for="6Count">6</label>
+                        <input type="radio" name="unitMaxCount" id="8Count" value="8">
+                        <label for="8Count">8</label>
+                        <input type="radio" name="unitMaxCount" id="10Count" value="10">
+                        <label for="10Count">10</label>
+                        <input type="radio" name="unitMaxCount" id="unLimit" value="99">
+                        <label for="unLimit">∞</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>攻擊速度:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" name="attackSpeed" placeholder="攻擊速度(次/分)" title="攻擊速度(次/分)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>移動速度:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" name="moveSpeed" placeholder="移動速度(單位/分)" title="移動速度(單位/分)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>攻擊距離:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="attackRnage" id="attackCloseDistance" value="0">
+                        <label for="attackCloseDistance">近距離</label>
+                        <input type="radio" name="attackRnage" id="attackMiddleDistance" value="1">
+                        <label for="attackMiddleDistance">中距離</label>
+                        <input type="radio" name="attackRnage" id="attackLongDistance" value="2">
+                        <label for="attackLongDistance">遠距離</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>攻擊數量:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="attackType" id="attackSingle" value="0">
+                        <label for="attackSingle">單體</label>
+                        <input type="radio" name="attackType" id="attackMultiple" value="1">
+                        <label for="attackMultiple">複數</label>
+                        <input type="radio" name="attackType" id="attackAll" value="2">
+                        <label for="attackAll">全體</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>攻擊可否對空:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="attackAirOrNot" id="attackAirOk" value="true">
+                        <label for="attackAirOk">可對空</label>
+                        <input type="radio" name="attackAirOrNot" id="attackAirNot" value="False">
+                        <label for="attackAirNot">不可對空</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>技能可否對空:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="skillAirOrNot" id="skillAirOk" value="true">
+                        <label for="skillAirOk">可對空</label>
+                        <input type="radio" name="skillAirOrNot" id="skillAirNot" value="False">
+                        <label for="skillAirNot">不可對空</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>可否攻擊砦:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="strongholdAttackOrNot" id="strongholdAttackOk" value="true">
+                        <label for="strongholdAttackOk">可攻擊砦</label>
+                        <input type="radio" name="strongholdAttackOrNot" id="strongholdAttackNot" value="False">
+                        <label for="strongholdAttackNot">不可攻擊砦</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>可否佔領砦:</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="radio" name="strongholdTakingOrNot" id="strongholdTakingOk" value="true">
+                        <label for="strongholdTakingOk">可佔領砦</label>
+                        <input type="radio" name="strongholdTakingOrNot" id="strongholdTakingNot" value="False">
+                        <label for="strongholdTakingNot">不可佔領砦</label>
+                    </div>
+                </div>
+                <!--EggInfo-->
+                <div class="row">
+                    <div class="col-4">
+                        <a>購入費用(CP):</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" name="unitBuyInCPCost" placeholder="購入費用(CP)" title="購入費用(CP)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>購入費用(藍鑽):</a>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" name="unitBuyInGemCost" placeholder="購入費用(藍鑽)" title="購入費用(藍鑽)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a>孵化時間(分):</a>
+                    </div>
+                    <div class="col-8">
+
+                        <input type="number" name="unitHatchTime" placeholder="孵化時間(分)" title="孵化時間(分)">
+                    </div>
+                </div>
+
+                <!--skillInfo-->
+                <!--<div>
+                    <a>技能對象:</a>
+                    <input type="radio" name="skillType" id="skillBuff" value="0">
+                    <label for="attackSingle">自己</label>
+                    <input type="radio" name="skillType" id="skillDeBuff" value="1">
+                    <label for="attackMultiple">敵人</label>
+                    <input type="radio" name="skillType" id="skillNonBuff" value="2">
+                    <label for="attackMultiple"></label>
+                </div>
+                <div>
+                    <a>技能有無增益效果:</a>
+                    <input type="radio" name="skillType" id="skillBuff" value="0">
+                    <label for="attackSingle">增益效果</label>
+                    <input type="radio" name="skillType" id="skillDeBuff" value="1">
+                    <label for="attackMultiple">減益效果</label>
+                    <input type="radio" name="skillType" id="skillNonBuff" value="2">
+                    <label for="attackMultiple">無增減益</label>
+                </div>-->
+                <div class="row">
+                    <div class="col-4 offset-4">
+                        <input class="form-control btn btn-info mt-2" type="submit" value="送出" />
+                    </div>
+                </div>
+                <!--Sheet.appendRow([unitName, unitCost, unitMaxCount, unitFlyOrNot, attackMultipleOrNot, attackAirOrNot, skillType, skillMultipleOrNot, skillAirOrNot]);-->
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
