@@ -1,3 +1,4 @@
-1.Google Apps Script¸Õª±
-2.¥Ø«e¦³¼g¤Jgoogle¸Õºâªíªº¥\¯à
-3.¸Õºâªí³sµ²:https://docs.google.com/spreadsheets/d/1XXGaH_ao5ANMsN4CRUtrUsX_t6GTexEqAfJ38yX3vbc/edit?usp=sharing
+https://ceeta.github.io/GoogleAppsScript/
+1.Google Apps Scriptè©¦ç©
+2.ç›®å‰æœ‰å¯«å…¥googleè©¦ç®—è¡¨çš„åŠŸèƒ½
+3.è©¦ç®—è¡¨é€£çµ:https://docs.google.com/spreadsheets/d/1XXGaH_ao5ANMsN4CRUtrUsX_t6GTexEqAfJ38yX3vbc/edit?usp=sharing
